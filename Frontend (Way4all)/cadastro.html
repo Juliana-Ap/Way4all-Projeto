@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--na linha abaixo o link de favicon (ícone do site que fica na aba do navegador)-->
+    <link rel="shortcut icon" href="img/logo_sb.png" type="image/x-icon">
+    <title>Cadastro - Way4all</title>
+    <link rel="stylesheet" href="css/style_logcad.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form data-register-form>
+        <img src="img/logo_cb.png" alt="logo Way4all com borda"><br>
+        <label for="name" >Nome completo:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Seu nome completo"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="nome@email.com" required><br>
+        <label for="password">Senha:</label><br>
+        <input type="password" id="password" name="password" placeholder="Sua senha" required><br>
+        <label for="confirm-password">Confirmar Senha:</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required><br>
+        <label for="pcd">Possui alguma deficiência?</label><br>
+        <select id="pcd" name="pcd"><br>
+            <option value="auditiva">Auditiva</option>
+            <option value="visual">Visual</option>
+            <option value="motora">Motora</option>
+            <option value="outro">Outra</option>
+        </select><br>
+        <p data-message></p>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <script src="js/app.js" defer></script>
+</body>
+</html>

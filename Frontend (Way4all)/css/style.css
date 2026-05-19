@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #A8BBF3;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5170ff;
+    padding: 20px;
+    max-height: 110px;
+}
+
+.logotipo img{
+    width: 150px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.busca input{
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px;
+}
+.busca button{
+    background-color: #FF3131;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+a img{
+    max-width: 20px;
+    margin-right: 50px;
+}
+.galeria{
+    padding: 20px;
+}
+.galeria h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+.destinos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.destinos img{
+    max-width: 250px;
+}
+.destino{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.destino a{
+    display: inline-block;
+    margin-top: 8px;
+    color: #1f3fbf;
+    font-weight: 700;
+}
+.destino button,
+.detalhes-destino button{
+    background-color: #FF3131;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+[data-message]{
+    min-height: 24px;
+    margin: 10px auto;
+    font-weight: 700;
+}
+[data-message][data-type="success"]{
+    color: #145c2e;
+}
+[data-message][data-type="error"]{
+    color: #8f1010;
+}
+
+.rodape{
+    background-color: #5170ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15%;
+    margin-bottom: 0;
+}
